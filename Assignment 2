@@ -1,0 +1,15 @@
+class animal:
+    alive = True
+    
+class dog(animal):
+    def move(self):
+        print("The dog is moving")
+
+class cat(animal):
+    def move(self):
+        print("The cat is walking")
+
+animals = [dog(), cat()]
+
+for animal in animals:
+    animal.move()
