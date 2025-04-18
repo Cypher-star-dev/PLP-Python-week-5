@@ -1,4 +1,4 @@
-# Your original class (points 1-3)
+
 class smartphone:
     def __init__(self, model, year, condition):
         self.model = model
@@ -8,13 +8,13 @@ class smartphone:
     def talk(self):
         print(f"Talking on {self.model}")
 
-# New subclass (point 4)
+# point 4
 class FoldableSmartphone(smartphone):
     def __init__(self, model, year, condition, folds):
         super().__init__(model, year, condition)
         self.folds = folds
 
-    # Polymorphism: override talk()
+    # Polymorphism override talk
     def talk(self):
         print(f"Talking on foldable {self.model} (folds: {self.folds}x)")
 
@@ -22,5 +22,5 @@ class FoldableSmartphone(smartphone):
 normal_phone = smartphone("Oppo", 2024, "Excellent")
 foldable_phone = FoldableSmartphone("Samsung", 2025, "New", 3)
 
-normal_phone.talk()    # "Talking on Oppo"
-foldable_phone.talk()  # "Talking on foldable Samsung (folds: 3x)"
+normal_phone.talk()    
+foldable_phone.talk()  
